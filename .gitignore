@@ -1,0 +1,78 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Log files
+*.log
+error_log
+error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node & Composer dependencies
+/node_modules
+/vendor
+composer.phar
+
+# Built assets
+/public/css
+/public/js
+/public/fonts
+/public/build
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Storage dynamic files
+/storage/*.key
+/storage/app/*
+!/storage/app/.gitignore
+/storage/app/public/*
+!/storage/app/public/.gitignore
+/storage/debugbar/*
+!/storage/debugbar/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# IDE & Editor files
+/.idea
+/.vscode
+*.sublime-project
+*.sublime-workspace
+.project
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE Helper & Cache files
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+.php_cs.cache
+.php-cs-fixer.cache
+.phpunit.result.cache
+.phpunit.cache
+
+# Testing & Coverage
+/coverage
+coverage.xml
+output.txt
+
+# Local Server & Docker Overrides
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+
