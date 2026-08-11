@@ -98,7 +98,7 @@
                             </div>{{-- //.main-menu --}}
 
                             {{-- Search + Canvas trigger --}}
-                            <div class="expand-btn-inner search-icon hidden-md">
+                            <div class="expand-btn-inner search-icon">
                                 <ul>
                                     <li class="sidebarmenu-search">
                                         <a class="hidden-xs rs-search"
@@ -141,7 +141,7 @@
     </header>
 
     {{-- Off-canvas Sidebar --}}
-    <nav class="right_menu_togle hidden-md"
+    <nav class="right_menu_togle"
          id="canvas-nav"
          aria-label="Sidebar navigation"
          role="navigation">
