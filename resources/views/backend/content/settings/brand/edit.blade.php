@@ -166,6 +166,21 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Brand Category</label>
+                                    <select name="brand_category_id" class="form-control">
+                                        <option value="">-- Select Category --</option>
+                                        @foreach ($brandCategories as $cat)
+                                            <option value="{{ $cat->id }}"
+                                                @if ($notice->brand_category_id == $cat->id) selected @endif>
+                                                {{ $cat->name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
 
                         <button type="submit" class="btn btn-info">Update</button>

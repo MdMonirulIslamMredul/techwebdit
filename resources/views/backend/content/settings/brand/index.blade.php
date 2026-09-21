@@ -200,6 +200,18 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Brand Category</label>
+                                    <select name="brand_category_id" class="form-control">
+                                        <option value="">-- Select Category --</option>
+                                        @foreach ($brandCategories as $cat)
+                                            <option value="{{ $cat->id }}">{{ $cat->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="table-responsive">
@@ -236,6 +248,7 @@
                         <tr>
                             <th>Image</th>
                             <th>Title</th>
+                            <th>Category</th>
                             <th>Active/Deactive</th>
                             <th>Action</th>
                         </tr>
@@ -245,6 +258,7 @@
                             <tr>
                                 <td><img src="{{ asset('/setting/banner/' . $multi->logo) }}" style="height: 100px"></td>
                                 <td>{{ $multi->title }}</td>
+                                <td>{{ $multi->brand_category_name ?? '—' }}</td>
 
                                 <td>
                                     @if ($multi->is_active == 1)
